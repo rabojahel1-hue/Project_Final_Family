@@ -35,7 +35,7 @@
 
                     <div class="card-footer bg-white border-top">
                         <div class="float-right">
-                            <form action="{{ route('admin.contact-messages.destroy', $contactMessage->id) }}" method="POST"
+                            <form action="{{ route('admin.contact_messages.destroy', $contactMessage->id) }}" method="POST"
                                 class="d-inline" onsubmit="return confirm('Move this message to trash?')">
                                 @csrf
                                 @method('DELETE')
@@ -45,7 +45,7 @@
                             </form>
                         </div>
 
-                        <a href="{{ route('admin.contact-messages.index') }}" class="btn btn-secondary">
+                        <a href="{{ route('admin.contact_messages.index') }}" class="btn btn-secondary">
                             <i class="fas fa-arrow-left"></i> Back to Inbox
                         </a>
                     </div>
